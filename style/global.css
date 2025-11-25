@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Revalia&family=Slackey&family=Stalinist+One&display=swap');
+
+:root {
+    --body-gradient: linear-gradient(to top left, #801111, #9e164d, #162b73);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yngwie Johanne</title>
+    <link rel="icon" type="image/jpg" href="assets/dhksxnjdhs.jpg">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body>
+    <!-- nav -->
+    <!-- <?php include "views/partials/nav.php" ?> -->
+    <nav class="navbar">
+        <div class="nav">
+            <div class="nav_logo">YNHARU.</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about_me">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div>
+                <!-- <button class="lightDark" id="theme_toggle"></button> -->
+                <div class="nav_time" id="clock">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mainContainer">
+        <!-- home section -->
+        <div class="fade-inX">
+            <section id="home">
+                <div class="homeContainer">
+                    <div class="imgContainer">
+                        <img src="assets/img/powder.jpg" alt="yngwie">
+                    </div>
+                    <div class="homeInfo">
+                        <div class="fade-inY">
+                            <h3>HELLO, I'M</h3>
+                        </div>
+                        <div class="fade-inY">
+                            <h1>YNGWIE</h1>
+                        </div>
+                        <div class="fade-inY">
+                            <div class="frontendDev" id="frontendDev"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+        </div>
+
+
+        <!-- project section -->
+        <section id="projects">
+            <div class="fade-inY head-projects">
+                <div class="section-head">
+                    <p>Explore My</p>
+                    <h1>PROJECTS</h1>
+                </div>
+            </div>
+
+            <div class="carousel-wrap">
+                <div class="carousel">
+                    <div class="card" style="background-image:url('https://picsum.photos/id/1015/500/600');"></div>
+                    <div class="card" style="background-image:url('https://picsum.photos/id/55/500/600');"></div>
+                    <div class="card" style="background-image:url('https://picsum.photos/id/1018/500/600');"></div>
+                    <div class="card" style="background-image:url('https://picsum.photos/id/1019/500/600');"></div>
+                    <div class="card" style="background-image:url('https://picsum.photos/id/1020/500/600');"></div>
+                    <div class="card" style="background-image:url('https://picsum.photos/id/1021/500/600');"></div>
+                </div>
+
+                <!-- controls moved inside wrapper so they align with carousel -->
+                <!-- <div class="controls">
+                    <button id="prev"><i class="fa-solid fa-arrow-left"></i> Prev</button>
+                    <button id="next">Next <i class="fa-solid fa-arrow-right"></i></button>
+                </div> -->
+            </div>
+            <div class="projectInfo">
+                <p><i>no projects to show yet atm.</i></p>
+            </div>
+        </section>
+        <br>
+
+        <!-- aboutme section -->
+        <section id="about_me">
+            <div class="fade-inY head-about">
+                <div class="section-head">
+                    <p>Get To Know Me</p>
+                    <h1>ABOUT ME</h1>
+                </div>
+
+                <div class="aboutInfo">
+                    <p>I'm Yngwie, a tenacious and optimistic front-end developer who aspires to be a fullstack
+                        developer. I
+                        thrive on creating prototype-based websites, creating maintable, scalable, and responsive
+                        designs.
+                    </p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illum et mollitia voluptate quam
+                        sint
+                        repellendus sed? Ex accusamus dicta quisquam saepe laborum ad neque? Dolores eius aliquid nihil
+                        rem
+                        iure, obcaecati enim debitis expedita eaque, nobis voluptatum commodi quam possimus veritatis
+                        officia ipsa a, consequuntur consectetur. Omnis hic officiis atque natus laudantium dignissimos
+                        ab
+                        molestias labore quisquam nihil magnam voluptate, sequi quos necessitatibus repudiandae
+                        molestiae
+                        ducimus fugiat ea.</p>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <!-- contact section -->
+        <section id="contact">
+            <div class="fade-only head-contact">
+                <div class="section-head">
+                    <p>Get In Touch</p>
+                    <h1>CONTACT</h1>
+                </div>
+            </div>
+            <div class="contactContainer">
+                <div class="email">
+                    <!-- <img src="assets/email.png" alt="email"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                        <!-- <rect width="36" height="36" fill="none" /> -->
+                        <path d="M32.33 6a2 2 0 0 0-.41 0h-28a2 2 0 0 0-.53.08l14.45 14.39Z"
+                            class="clr-i-solid clr-i-solid-path-1" />
+                        <path
+                            d="m33.81 7.39l-14.56 14.5a2 2 0 0 1-2.82 0L2 7.5a2 2 0 0 0-.07.5v20a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V8a2 2 0 0 0-.12-.61M5.3 28H3.91v-1.43l7.27-7.21l1.41 1.41Zm26.61 0h-1.4l-7.29-7.23l1.41-1.41l7.27 7.21Z"
+                            class="clr-i-solid clr-i-solid-path-2" />
+                        <path fill="none" d="M0 0h36v36H0z" />
+                    </svg>
+                    yngwiejohannepunsalan@gmail.com
+                </div>
+                <div class="tel">
+                    <img src="assets/icons/tel.png" alt="phone">
+                    +63 916 508 1846
+                </div>
+            </div>
+            <div class="contactIcons">
+                <ul>
+                    <li>
+                        <a href="https://facebook.com/yngwiejohanne.punsalan.9" target="_blank">
+                            <!-- <i class="fa-brands fa-square-facebook "></i> -->
+                            <i class="fa-brands fa-square-facebook fa-bounce"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/_y.ixa/" target="_blank">
+                            <!-- <i class="fa-brands fa-square-instagram"></i> -->
+                            <i class="fa-brands fa-square-instagram fa-shake"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/yjp3ynharu" target="_blank">
+                            <!-- <i class="fa-brands fa-square-linkedin"></i> -->
+                            <i class="fa-brands fa-square-linkedin fa-flip"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/haruna-aki" target="_blank">
+                            <!-- <i class="fa-brands fa-square-github"></i> -->
+                            <i class="fa-brands fa-square-github fa-spin fa-spin-reverse"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/hover.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/frontend.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            document.body.classList.add("loaded");
+        });
+    </script>
+</body>
+
+</html>
