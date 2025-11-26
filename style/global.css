@@ -2,6 +2,7 @@
 
 :root {
     --body-gradient: linear-gradient(to top left, #801111, #9e164d, #162b73);
+    --nav-gradient: linear-gradient(to left, rgba(128, 128, 128, 0.77), rgba(12, 8, 20, 0.77));
 }
 
 * {

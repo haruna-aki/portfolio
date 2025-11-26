@@ -93,6 +93,7 @@ html {
     padding: 20px;
     width: 100%;
     height: 800px;
+    display: flex;
 }
 
 #projects {
@@ -104,8 +105,7 @@ html {
 #about_me {
     padding: 20px;
     width: 100%;
-    height: 800px;
-    gap: 20px;
+    height: 1000px;
 }
 
 #contact {
@@ -126,7 +126,6 @@ html {
 
 .imgContainer {
     border-radius: 50% 20% / 10% 40%;
-    border: 1px solid black;
     /* padding: 20px; */
     /* width: 460px; */
     width: 90%;
@@ -141,6 +140,13 @@ html {
     transition: transform 0.3s ease-in-out;
 }
 
+.imgContainer:hover {
+    /* transform: rotate(15deg); */
+    transform: rotate(7deg);
+    cursor: pointer;
+    border: 2px solid #f7f7f7;
+}
+
 .imgContainer img {
     /* max-width: 450px;
     max-height: 450px;
@@ -153,18 +159,6 @@ html {
     border-radius: 50% 20% / 10% 40%;
     /* align-content: center; */
     /* transform: rotate(deg); */
-}
-
-/* .imgContainer img:hover {
-    transform: rotate(-10deg);
-    transition: transform 0.5s ease-in-out;
-    cursor: pointer;
-} */
-
-.imgContainer:hover {
-    /* transform: rotate(15deg); */
-    transform: rotate(7deg);
-    cursor: pointer;
 }
 
 .homeContainer {
@@ -185,7 +179,9 @@ html {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding-top: 80px;
+    padding-top: 0;
+    height: max-content;
+    flex: 1 1 auto;
 }
 
 .homeInfo {
@@ -499,7 +495,7 @@ section#contact {
     font-family: "Montserrat", sans-serif;
     font-size: 8px;
     font-weight: 500;
-    font-style: normal;
+    font-style: italic;
     color: #0a0a0a;
 }
 
@@ -633,10 +629,24 @@ body.loaded .fade-only {
 
     width: 700px;
     padding: 35px 75px;
+    flex: 1;
 }
 
 .aboutInfo p {
     font-family: "Montserrat", sans-serif;
     font-size: 1.25rem;
     color: #d1d1d1;
+    cursor: default;
+}
+
+b,
+strong,
+i {
+    color: #27b2b7;
+}
+
+#carpediem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
