@@ -55,6 +55,9 @@
 
 body {
     background: var(--body-gradient);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 html {
@@ -645,8 +648,17 @@ i {
     color: #27b2b7;
 }
 
-#carpediem {
+q {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-style: italic;
+    color: #27b2b7;
+}
+
+q:hover {
+    background: linear-gradient(to left, #27b2b7, #245d66);
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
 }
