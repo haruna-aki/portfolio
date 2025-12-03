@@ -4,14 +4,17 @@ function updateClock() {
     let hours = now.getHours();
     let minutes = String(now.getMinutes()).padStart(2, "0");
     let seconds = String(now.getSeconds()).padStart(2, "0");
-    let ampm = hours >= 12 ? "AM" : "PM";
+    let ampm = hours >= 12 ? "PM" : "AM";
 
-    //format
+    // format
     hours = hours % 12;
     hours = hours ? hours : 12; // 0 should be 12
     hours = String(hours).padStart(2, "0");
 
-    document.getElementById('clock').textContent = `${hours}:${minutes} ${ampm}`;
+    const clockEl = document.getElementById('clock');
+    if (clockEl) {
+        clockEl.textContent = `${hours}:${minutes} ${ampm}`;
+    }
 }
 updateClock();
 
