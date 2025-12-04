@@ -331,12 +331,22 @@ section#contact {
     color: #0a0a0a;
 }
 
+.email a {
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
 .tel {
     display: flex;
     align-items: center;
     gap: 10px;
     font-family: "Stalinist One", sans-serif;
     font-size: 12px;
+    color: #0a0a0a;
+}
+
+.tel a {
+    text-decoration: none;
     color: #0a0a0a;
 }
 
@@ -395,7 +405,7 @@ section#contact {
     cursor: pointer;
 }
 
-.email:hover {
+.email a:hover {
     background: linear-gradient(150deg, rgba(9, 137, 30, 0.77), rgba(214, 219, 215, 0.77));
     -webkit-background-clip: text;
     background-clip: text;
@@ -403,13 +413,19 @@ section#contact {
     cursor: pointer;
 }
 
-.tel:hover {
+.tel a:hover {
     background: linear-gradient(150deg, rgba(214, 219, 215, 0.77), rgba(9, 137, 30, 0.77));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     cursor: pointer;
 }
+
+.email svg,
+.tel img:hover {
+    cursor: pointer;
+}
+
 
 /* proj. */
 #projects .carousel-wrap {
