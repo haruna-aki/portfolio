@@ -685,3 +685,57 @@ q:hover {
     color: transparent;
     cursor: pointer;
 }
+
+/* smooth scroll :DD */
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+        /* transform: translateX(-100px); slides */ 
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        /* transform: translateX(0); */
+    }
+}
+
+.contact {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+@keyframes grow {
+    from {
+        opacity: 0;
+        clip-path: inset(100% 100% 0 100%);
+    }
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.about__me {
+    animation: grow linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateX(-100px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.projects {
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%
+}
