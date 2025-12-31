@@ -77,7 +77,7 @@
 
 /* time is relative, who said that? */
 .nav_time {
-    font-size: 16px;
+    font-size: 1rem;
     background: linear-gradient(to left, rgba(128, 128, 128, 0.77), rgba(12, 8, 20, 0.77));
     -webkit-background-clip: text;
     background-clip: text;
@@ -100,14 +100,14 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 1.25rem;
     padding: 0;
     margin: 0;
 }
 
 .nav ul li a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     background: linear-gradient(to left, rgba(128, 128, 128, 0.77), rgba(12, 8, 20, 0.77));
     -webkit-background-clip: text;
     background-clip: text;
@@ -144,7 +144,7 @@
 }
 
 /* Responsive adjustments for nav */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .nav {
         padding: 8px;
     }
@@ -163,13 +163,13 @@
 
 @media (max-width: 600px) {
     .nav {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 8px;
     }
 
     .nav ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         width: 100%;
     }
@@ -187,4 +187,13 @@
     .nav_time {
         font-size: 14px;
     }
+} */
+
+/* new media queries*/
+@media (min-width: 320px) and (max-width: 500px) {
+    .navbar {
+        width: 100%;
+    }
 }
+
+/* imma continue this shi after ny */
