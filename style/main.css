@@ -31,25 +31,49 @@
     } */
 
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .homeInfo h1 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .homeInfo h3,
     .frontendDev {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .contactIcons i {
-        font-size: 28px;
+        font-size: 1.75rem;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 600px) {
+    .homeInfo h1 {
+        font-size: 2.5rem;
+    }
+
+    .homeInfo h3,
+    .frontendDev {
+        font-size: 1.25rem;
+    }
+
+    .contactIcons i {
+        font-size: 2rem;
+    }
+
     .nav ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
 
@@ -90,6 +114,8 @@ html {
     height: 100%;
     width: 100%;
     padding: 20px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 #home {
@@ -686,7 +712,7 @@ q:hover {
     cursor: pointer;
 }
 
-/* smooth scroll :DD */
+/* animate scroll :DD */
 @keyframes appear {
     from {
         opacity: 0;
@@ -709,7 +735,7 @@ q:hover {
 @keyframes grow {
     from {
         opacity: 0;
-        clip-path: inset(100% 100% 0 100%);
+        clip-path: inset(100% 0 0 0);
     }
     to {
         opacity: 1;

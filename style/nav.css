@@ -1,5 +1,6 @@
 .navbar {
-    padding: 0 20px 0 20px;
+    margin: 0;
+    padding: 0;
     width: 100%;
     /* background: linear-gradient(to top left, #1a2238, #9baec8, #f5f7fa); */
     /* background: linear-gradient(150deg, #3e3e3e, #d1d1d1 70%, #565656); */
@@ -12,10 +13,14 @@
     border-right: none;
     border-radius: 0 0 10px 10px;
     backdrop-filter: blur(20px);
-    position: sticky;
+
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 9999;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 .nav {
@@ -24,7 +29,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 /* logo poco loco moco doco mow*/
@@ -143,6 +148,17 @@
     text-align: center; */
 }
 
+.nav_logo,
+.nav_right {
+    flex-shrink: 0;
+}
+
+.nav ul {
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+
 /* Responsive adjustments for nav */
 /* @media (max-width: 768px) {
     .nav {
@@ -190,10 +206,41 @@
 } */
 
 /* new media queries*/
-@media (min-width: 320px) and (max-width: 500px) {
+/* @media (min-width: 320px) and (max-width: 500px) {
     .navbar {
         width: 100%;
     }
-}
+} */
 
 /* imma continue this shi after ny */
+
+@media (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+
+    .nav ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav_right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav ul li a {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+
+    .nav_logo {
+        font-size: 20px;
+    }
+}
