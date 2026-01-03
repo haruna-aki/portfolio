@@ -21,7 +21,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 800px) {
     .homeInfo h1 {
         font-size: 2.5rem;
     }
@@ -41,6 +41,16 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+    .nav_logo {
+        display: none;
+    }
+
+    .nav_time {
+        display: none;
     }
 }
 
@@ -174,15 +184,15 @@ html {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-  border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .homeContainer {
@@ -325,18 +335,44 @@ section#contact {
 
 .contactContainer {
     margin: 0 auto;
-    width: max-content;
+    /* width: clamp(300px, 705px, 800px); */
+    width: fit-content;
+    max-width: 100vw;
     height: max-content;
     border: 1px solid #bebebe;
     /* margin-top: 20px; */
     display: flex;
-    /* justify-content: center; */
+    flex-wrap: nowrap;
+    justify-content: center;
     /* align-items: center; */
     /* align-self: center; */
     gap: 20px;
     border-radius: 50px;
     padding: 15px;
 }
+
+/* .email a,
+.tel a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+} */
+
+.email a {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.email,
+.tel {
+    min-width: 0;
+}
+
+/* .email a,
+.tel a {
+    white-space: nowrap;
+    font-size: clamp(0.6rem, 2.2vw, 0.75rem);
+} */
 
 .contact-outer-container {
     display: flex;
@@ -687,8 +723,9 @@ q:hover {
     from {
         opacity: 0;
         scale: 0.5;
-        /* transform: translateX(-100px); slides */ 
+        /* transform: translateX(-100px); slides */
     }
+
     to {
         opacity: 1;
         scale: 1;
@@ -707,6 +744,7 @@ q:hover {
         opacity: 0;
         clip-path: inset(100% 0 0 0);
     }
+
     to {
         opacity: 1;
         clip-path: inset(0 0 0 0);
@@ -722,8 +760,9 @@ q:hover {
 @keyframes slide {
     from {
         opacity: 0;
-        transform: translateX(-100px); 
+        transform: translateX(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
