@@ -15,3 +15,7 @@
 *::after {
     box-sizing: border-box;
 }
+
+body {
+    cursor: url(../assets/img/cursor.png), auto;
+}
