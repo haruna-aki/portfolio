@@ -514,7 +514,7 @@ q:hover {
 
 .unit {
     flex: 0 0 5em;
-    height: 5em;
+    height: 3em;
     padding: 1em;
     background: linear-gradient(to left, rgba(12, 8, 20, 0.77), rgba(128, 128, 128, 0.77));
     font-size: 3rem;
@@ -524,8 +524,8 @@ q:hover {
 }
 
 .unit img {
-    width: 5rem;
-    height: 5rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 @keyframes spin {
