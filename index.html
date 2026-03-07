@@ -282,6 +282,15 @@
                 <figcaption class="visually-hidden">
                   Yngwie Johanne M. Punsalan
                 </figcaption>
+                <div class="tonearm">
+                  <div class="rest"></div>
+                  <div class="headshell"></div>
+                  <audio
+                    id="vinyl-audio"
+                    src="./assets/audio/la-vie-en-rose.mp3"
+                    preload="auto"
+                  ></audio>
+                </div>
               </figure>
               <div class="shape">
                 <p>yngwiejohannepunsalan@gmail.com</p>
@@ -349,6 +358,30 @@
     <script>
       window.addEventListener("load", function () {
         document.body.classList.add("loaded");
+      });
+
+      const audio = document.getElementById("vinyl-audio");
+      const vinyl = document.querySelector(".contact-image");
+
+      let audioUnlocked = false;
+
+      document.addEventListener(
+        "click",
+        () => {
+          audioUnlocked = true;
+        },
+        { once: true },
+      );
+
+      vinyl.addEventListener("mouseenter", () => {
+        if (audioUnlocked) {
+          audio.currentTime = 0;
+          audio.play();
+        }
+      });
+
+      vinyl.addEventListener("mouseleave", () => {
+        audio.pause();
       });
     </script>
   </body>

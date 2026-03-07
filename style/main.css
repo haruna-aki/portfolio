@@ -618,11 +618,114 @@ section#contact {
     flex-wrap: nowrap;
 }
 
+.contact-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: clamp(55px, 10vw, 70px);
+    height: clamp(55px, 10vw, 70px);
+    padding: 22px;
+
+    border: 34px solid transparent;
+    border-radius: 50%;
+
+    background:
+        /* linear-gradient(white, white) padding-box, */
+        linear-gradient(67deg,
+            #262626 50%,
+            #0a0a0a 100%) border-box;
+
+    outline: 1px solid #bebebe;
+    outline-offset: -5px;
+    cursor: url("../assets/img/music-note.png"), auto;
+    position: relative;
+}
+
+.tonearm {
+    position: absolute;
+    top: -15px;
+    left: 50px;
+
+    width: 55px;
+    height: 6px;
+    background: #9b9b9b;
+
+    border-radius: 4px;
+    transform-origin: left center;
+    transform: rotate(47deg);
+
+    transition: transform 0.4s ease;
+}
+
+.rest {
+    position: absolute;
+    top: -2px;
+    left: -10px;
+
+    width: 16px;
+    height: 16px;
+    background: radial-gradient(circle, #262626, #0a0a0a);
+    border-radius: 50%;
+}
+
+.headshell {
+    position: absolute;
+    right: -6px;
+    top: -4px;
+
+    width: 12px;
+    height: 12px;
+    background: #222;
+    border-radius: 2px;
+}
+
+.headshell::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 4px;
+
+    width: 2px;
+    height: 6px;
+    background: rgb(146, 4, 4);
+}
+
 .contact-image img {
     width: clamp(50px, 8vw, 65px);
     aspect-ratio: 1;
     object-fit: initial;
     border-radius: 50%;
+
+    animation: vinyl-spin 6s linear infinite;
+    animation-play-state: paused;
+    animation-delay: 0.67s;
+}
+
+.contact-image::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: radial-gradient(circle, #d4af37, #605204);
+    border-radius: 50%;
+}
+
+.contact-image:hover img {
+    animation-play-state: running;
+}
+
+.contact-image:hover .tonearm {
+    transform: rotate(70deg);
+}
+
+@keyframes vinyl-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* msg box*/
