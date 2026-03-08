@@ -647,13 +647,13 @@ section#contact {
     top: -15px;
     left: 50px;
 
-    width: 55px;
+    width: 67px;
     height: 6px;
     background: #9b9b9b;
 
     border-radius: 4px;
     transform-origin: left center;
-    transform: rotate(47deg);
+    transform: rotate(63deg);
 
     transition: transform 0.4s ease;
 }
@@ -716,7 +716,7 @@ section#contact {
 }
 
 .contact-image:hover .tonearm {
-    transform: rotate(70deg);
+    transform: rotate(83deg);
 }
 
 @keyframes vinyl-spin {
